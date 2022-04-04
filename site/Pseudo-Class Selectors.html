@@ -5,6 +5,7 @@
 <title>Pseudo Class Selectors</title>
 <style>
 /* Styles go here. */
+
 header li {
   list-style: none;
 }
@@ -12,6 +13,7 @@ a:link, a:visited {
   text-decoration: none;
   background-color: green;
   border: 1px solid blue;
+  border-radius: 10px;
   color: black;
   display: block;
   width: 200px;
@@ -22,6 +24,7 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: red;
   color: purple;
+  transition:0.4s;
 }
 
 header li:nth-child(3) {
@@ -32,9 +35,10 @@ section div:nth-child(odd) {
   background-color: gray;
 }
 
-section div:nth-child(4):hover {
+section div:nth-child(even):hover {
   background-color: green;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 </style>
